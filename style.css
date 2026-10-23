@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f1;
+    color: #303a32;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #315b43;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f6d99b;
+}
+
+.hero {
+    min-height: 380px;
+    background:
+        linear-gradient(
+            rgba(22, 45, 30, 0.60),
+            rgba(22, 45, 30, 0.60)
+        ),
+        url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1600&q=85")
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 35px 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f6d99b;
+    color: #26392c;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    margin-bottom: 25px;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #6b9874;
+}
+
+.card h2 {
+    color: #315b43;
+    margin-bottom: 12px;
+}
+
+.card ul {
+    padding-left: 25px;
+}
+
+footer {
+    background-color: #315b43;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 10px 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
